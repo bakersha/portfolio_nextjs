@@ -1,3 +1,6 @@
+import BackButton from "../components/button"
+import ColumnarLayout from "../components/columnarLayout"
+
 const jobs = [
     {
         level: 'top',
@@ -55,22 +58,43 @@ const jobs = [
 
 export default function Experience() {
     return (
-        <main className="flex min-h-screen flex-col items-left justify-between p-20">
-            {jobs.map((job) => (
-                <div key={job.employer} className="relative pl-16">
-                    {job.level == "top" && <h1 className="text-2xl font-semibold leading-9 text-gray-700">
-                        {job.employer}
-                    </h1>}
-                    <h2 className="text-base leading-7 font-light text-gray-400">{job.jobtitle}</h2>
-                    <h3 className="text-base leading-7 font-extralight text-gray-500">{job.date}</h3>
-                    <ul className="my-2 font-light text-base leading-7 text-gray-600">
-                        <li>{job.bullet1}</li>
-                        <li>{job.bullet2}</li>
-                        <li>{job.bullet3}</li>
-                        <li>{job.bullet4}</li>
-                    </ul>
+        <main className="flex min-h-screen flex-col items-left p-24">
+            <span className="pl-16"><BackButton></BackButton></span>
+            <ColumnarLayout>
+                <div>
+                    {jobs.map((job) => (
+                        <div key={job.employer} className="pl-16">
+                            {job.level == "top" && <h1 className="text-2xl font-semibold leading-9 text-gray-700">
+                                {job.employer}
+                            </h1>}
+                            <h2 className="text-base leading-7 font-light text-gray-400">{job.jobtitle}</h2>
+                            <h3 className="text-base leading-7 font-extralight text-gray-500">{job.date}</h3>
+                            <ul className="my-2 font-light text-base leading-7 text-gray-600">
+                                <li>{job.bullet1}</li>
+                                <li>{job.bullet2}</li>
+                                <li>{job.bullet3}</li>
+                                <li>{job.bullet4}</li>
+                            </ul>
+                        </div>
+                    ))}
                 </div>
-            ))}
+                <div>
+                    <div className="pl-16">
+                        <h1 className="text-2xl font-semibold leading-9 text-gray-700">
+                            Oregon State University
+                        </h1>
+                        <h2 className="text-base leading-7 font-light text-gray-400">BS Computer Science</h2>
+                        <h3 className="text-base leading-7 font-extralight text-gray-500">Class of 2019</h3>
+                    </div>
+                    <div className="pl-16 col-span-1">
+                        <h1 className="text-2xl font-semibold leading-9 text-gray-700">
+                            University of Oregon
+                        </h1>
+                        <h2 className="text-base leading-7 font-light text-gray-400">BA Religious Studies</h2>
+                        <h3 className="text-base leading-7 font-extralight text-gray-500">Class of 2011</h3>
+                    </div>
+                </div>
+            </ColumnarLayout>
         </main>
     )
 }
