@@ -1,15 +1,17 @@
 import ColumnarLayout from "../components/columnarLayout";
 import Pill from "../components/pill";
+import BackButton from "../components/button"
 
 export default function About() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">So what am I all about?</h1>
+        <main className="flex min-h-screen flex-col items-left justify-between p-24">
+            <BackButton></BackButton>
+            <h1 className="pb-10 place-self-center">So what am I all about?</h1>
             <ColumnarLayout>
                 <div>
-                    <h4>Known Technologies</h4>
-                    <div >
-                        <div >
+                    <h4 className="mb-1">Known Technologies</h4>
+                    <div className="mb-2">
+                        <div className="mb-2">
                             <h6>Languages</h6>
                             <Pill name={"C#"}></Pill>
                             <Pill name={"TypeScript"}></Pill>
@@ -21,7 +23,7 @@ export default function About() {
                             <Pill name={"HTML"}></Pill>
                             <Pill name={"CSS / SCSS"}></Pill>
                         </div>
-                        <div>
+                        <div className="mb-2">
                             <h6 className="lead pe-1">Frameworks / Libraries</h6>
                             <Pill name={".NET Framework"}></Pill>
                             <Pill name={".NET Core"}></Pill>
@@ -33,7 +35,7 @@ export default function About() {
                             <Pill name={"Tailwind CSS"}></Pill>
                             <Pill name={"NextJS"}></Pill>
                         </div>
-                        <div>
+                        <div className="mb-2">
                             <h6 className="lead pe-1">Tools</h6>
                             <Pill name={"Visual Studio"}></Pill>
                             <Pill name={"VS Code"}></Pill>
@@ -44,7 +46,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    <h4>Other Skills</h4>
+                    <h4 className="mb-1">Other Skills</h4>
                     <ul className="mb-2">
                         <li>Internal-use banking applications development</li>
                         <li>Eager and quick learner</li>
@@ -55,8 +57,8 @@ export default function About() {
                     </ul>
                 </div>
                 <div>
-                    <h3>In my free time, you may find me...</h3>
-                    <ul>
+                    <h3 className="mb-2">In my free time, you may find me...</h3>
+                    <ul className="mb-2">
                         <li>Hanging out with my family</li>
                         <li>Spending time in nature</li>
                         <li>Listening to podcasts, audio books, or music</li>
