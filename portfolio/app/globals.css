@@ -49,3 +49,8 @@ h4 {
   @apply font-semibold;
   @apply text-gray-400;
 }
+
+h5 {
+  @apply text-gray-200;
+  @apply font-light;
+}
