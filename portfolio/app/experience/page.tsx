@@ -1,5 +1,8 @@
 import BackButton from "../components/button"
 import ColumnarLayout from "../components/columnarLayout"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 const jobs = [
     {
@@ -8,6 +11,7 @@ const jobs = [
         jobtitle: 'Software Engineer II',
         date: 'Sep 2019 - Present',
         location: 'Eugene, OR',
+        url: 'https://umpquabank.com',
         bullet1:
             'Full stack development as part of an Agile dev team.',
         bullet2:
@@ -23,6 +27,7 @@ const jobs = [
         jobtitle: 'QA Analyst I',
         date: 'Feb 2016 - Sep 2019',
         location: 'Eugene, OR',
+        url: 'https://penfed.org',
         bullet1:
             'Construction and execution of manual tests on internal and external banking applications.',
         bullet2:
@@ -65,7 +70,9 @@ export default function Experience() {
                     {jobs.map((job) => (
                         <div key={job.employer} className="pl-16">
                             {job.level == "top" && <h1 className="text-2xl font-semibold leading-9 text-gray-700">
-                                {job.employer}
+                                {job.employer} <a className="ms-2"
+                                    href={job.url} target="_blank"
+                                    rel="noopener noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="2xs"></FontAwesomeIcon></a>
                             </h1>}
                             <h2 className="text-base leading-7 font-light text-gray-400">{job.jobtitle}</h2>
                             <h3 className="text-base leading-7 font-extralight text-gray-500">{job.date}</h3>
@@ -81,14 +88,17 @@ export default function Experience() {
                 <div>
                     <div className="pl-16">
                         <h1 className="text-2xl font-semibold leading-9 text-gray-700">
-                            Oregon State University
+                            Oregon State University <a className="ms-2"
+                                href="https://engineering.oregonstate.edu/Academics/Degrees/computer-science" target="_blank"
+                                rel="noopener noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="2xs"></FontAwesomeIcon></a>
                         </h1>
                         <h2 className="text-base leading-7 font-light text-gray-400">BS Computer Science</h2>
                         <h3 className="text-base leading-7 font-extralight text-gray-500">Class of 2019</h3>
                     </div>
                     <div className="pl-16 col-span-1">
                         <h1 className="text-2xl font-semibold leading-9 text-gray-700">
-                            University of Oregon
+                            University of Oregon <a className="ms-2" href="https://religion.uoregon.edu/"
+                                target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="2xs"></FontAwesomeIcon></a>
                         </h1>
                         <h2 className="text-base leading-7 font-light text-gray-400">BA Religious Studies</h2>
                         <h3 className="text-base leading-7 font-extralight text-gray-500">Class of 2011</h3>
