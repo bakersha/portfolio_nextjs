@@ -12,9 +12,9 @@ export default function Home() {
       </p>
       <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-          <a href="/about">About <FontAwesomeIcon icon={faAngleRight} size="xs" /></a>
-          <a href="/experience">Experience <FontAwesomeIcon icon={faAngleRight} size="xs" /></a>
-          <a href="/contact">Contact <FontAwesomeIcon icon={faAngleRight} size="xs" /></a>
+          <a href="/about" className="z-10">About <FontAwesomeIcon icon={faAngleRight} size="xs" /></a>
+          <a href="/experience" className="z-10">Experience <FontAwesomeIcon icon={faAngleRight} size="xs" /></a>
+          <a href="/contact" className="z-10">Contact <FontAwesomeIcon icon={faAngleRight} size="xs" /></a>
           {/* <a href="/projects">Projects <FontAwesomeIcon icon={faAngleRight} size="xs" /></a> */}
         </div>
       </div>
