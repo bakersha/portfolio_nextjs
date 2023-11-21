@@ -12,9 +12,9 @@ export default function Contact() {
             <h1 className="text-center">Contact</h1>
             <div className="mx-auto mt-16 max-w-4xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
                 <div className="grid grid-cols-3 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-1 md:flex lg:gap-x-10 items-center">
-                    <LinkCard url="https://www.linkedin.com/in/sharayabaker/" description="sharayabaker" faIcon={faLinkedin}></LinkCard>
-                    <LinkCard url="https://github.com/bakersha/" description="@bakersha" faIcon={faGithub}></LinkCard>
-                    <LinkCard url="mailto:sharayakbaker@gmail.com" description="sharayakbaker@gmail.com" faIcon={faEnvelope}></LinkCard>
+                    <LinkCard url="https://www.linkedin.com/in/sharayabaker/" description="sharayabaker" faIcon={faLinkedin} animationDelay={3}></LinkCard>
+                    <LinkCard url="https://github.com/bakersha/" description="@bakersha" faIcon={faGithub} animationDelay={6}></LinkCard>
+                    <LinkCard url="mailto:sharayakbaker@gmail.com" description="sharayakbaker@gmail.com" faIcon={faEnvelope} animationDelay={9}></LinkCard>
                 </div>
             </div>
         </main>

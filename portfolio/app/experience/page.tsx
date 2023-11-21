@@ -3,6 +3,7 @@ import ColumnarLayout from "../components/columnarLayout"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import Pill from "../components/pill"
 
 const jobs = [
     {
@@ -68,7 +69,7 @@ export default function Experience() {
             <ColumnarLayout>
                 <div>
                     {jobs.map((job) => (
-                        <div key={job.employer} className="pl-16">
+                        <div key={job.employer} className="pl-16 mb-5">
                             {job.level == "top" && <h1 className="text-2xl font-semibold leading-9 text-gray-700">
                                 {job.employer} <a className="ms-2"
                                     href={job.url} target="_blank"
@@ -86,18 +87,18 @@ export default function Experience() {
                     ))}
                 </div>
                 <div>
-                    <div className="pl-16">
-                        <h1 className="text-2xl font-semibold leading-9 text-gray-700">
-                            Oregon State University <a className="ms-2"
+                    <div className="pl-16 mb-5">
+                        <h1 className="text-2xl font-semibold leading-9 text-gray-700 ">
+                            Oregon State University <a className="ms-2 hover-glow"
                                 href="https://engineering.oregonstate.edu/Academics/Degrees/computer-science" target="_blank"
                                 rel="noopener noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="2xs"></FontAwesomeIcon></a>
                         </h1>
                         <h2 className="text-base leading-7 font-light text-gray-400">BS Computer Science</h2>
                         <h3 className="text-base leading-7 font-extralight text-gray-500">Class of 2019</h3>
                     </div>
-                    <div className="pl-16 col-span-1">
+                    <div className="pl-16 mb-5 col-span-1">
                         <h1 className="text-2xl font-semibold leading-9 text-gray-700">
-                            University of Oregon <a className="ms-2" href="https://religion.uoregon.edu/"
+                            University of Oregon <a className="ms-2 hover-glow" href="https://religion.uoregon.edu/"
                                 target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="2xs"></FontAwesomeIcon></a>
                         </h1>
                         <h2 className="text-base leading-7 font-light text-gray-400">BA Religious Studies</h2>

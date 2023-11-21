@@ -54,3 +54,22 @@ h5 {
   @apply text-gray-200;
   @apply font-light;
 }
+.hover-glow {
+  &:hover {
+    text-shadow: 0 0 30px #ffffff;
+  }
+}
+
+.contact-hover {
+  &:hover {
+    box-shadow: 0 0 40px #ffffff29;
+  }
+}
+
+.fa-arrow-up-right-from-square {
+  @apply text-indigo-600;
+
+  &:hover {
+    box-shadow: 0 0 25px rgb(79 70 229);
+  }
+}
