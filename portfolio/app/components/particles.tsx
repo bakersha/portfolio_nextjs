@@ -31,6 +31,68 @@ export default function NightSkyParticles() {
                 background: {
                     position: "50% 50%"
                 },
+                emitters: {
+                    position: {
+                        x: 100,
+                        y: 50
+                    },
+                    rate: {
+                        delay: 5,
+                        quantity: 1
+                    },
+                    size: {
+                        width: 0,
+                        height: 0
+                    },
+                    particles: {
+                        move: {
+                            enable: true,
+                            speed: { min: 8, max: 12 },
+                            direction: "left",
+                            angle: 10,
+                            outModes: {
+                                default: "destroy",
+                                left: "none"
+                            }
+                        },
+                        number: {
+                            value: 1,
+                            max: 3
+                        },
+                        opacity: {
+                            value: 1
+                        },
+                        shape: {
+                            options: {
+                                images:
+                                    [
+                                        {
+                                            gif: false,
+                                            height: 100,
+                                            src: "/xwing.png",
+                                            width: 200
+                                        },
+                                        {
+                                            gif: false,
+                                            height: 100,
+                                            src: "/tieinterceptor.png",
+                                            width: 200
+                                        },
+                                    ]
+                            },
+                            type: "images"
+                        },
+                        size: {
+                            value: {
+                                min: 15,
+                                max: 30
+                            }
+                        },
+                        zIndex: {
+                            value: 0
+                        }
+                    }
+                },                
                 interactivity: {
                     detectsOn: "canvas",
                     events: {
@@ -112,68 +174,6 @@ export default function NightSkyParticles() {
                     scale: 1,
                     type: "inline",
                     url: "/SharayaBakerMountainRange2.svg"
-                },
-                emitters: {
-                    position: {
-                        x: 100,
-                        y: 50
-                    },
-                    rate: {
-                        delay: 5,
-                        quantity: 1
-                    },
-                    size: {
-                        width: 0,
-                        height: 0
-                    },
-                    particles: {
-                        move: {
-                            enable: true,
-                            speed: { min: 8, max: 12 },
-                            direction: "left",
-                            angle: 10,
-                            outModes: {
-                                default: "destroy",
-                                left: "none"
-                            }
-                        },
-                        number: {
-                            value: 1,
-                            max: 3
-                        },
-                        opacity: {
-                            value: 1
-                        },
-                        shape: {
-                            options: {
-                                images:
-                                    [
-                                        {
-                                            gif: false,
-                                            height: 100,
-                                            src: "/xwing.png",
-                                            width: 200
-                                        },
-                                        {
-                                            gif: false,
-                                            height: 100,
-                                            src: "/tieinterceptor.png",
-                                            width: 200
-                                        },
-                                    ]
-                            },
-                            type: "images"
-                        },
-                        size: {
-                            value: {
-                                min: 15,
-                                max: 30
-                            }
-                        },
-                        zIndex: {
-                            value: -100
-                        }
-                    }
                 }
             }}
         />

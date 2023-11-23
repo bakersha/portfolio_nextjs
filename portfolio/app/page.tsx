@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import CustomParticles from './components/particles'
+import NightSkyParticles from './components/particles'
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
           {/* <a href="/projects">Projects <FontAwesomeIcon icon={faAngleRight} size="xs" /></a> */}
         </div>
       </div>
-      <CustomParticles></CustomParticles>
+      <NightSkyParticles></NightSkyParticles>
     </main>
   )
 }
