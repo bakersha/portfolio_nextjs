@@ -75,13 +75,13 @@ export default function About() {
                 <div>
                     <h1 className="text-2xl font-semibold leading-9 text-gray-700 mb-2">In my free time, you may find me...</h1>
                     <ul className="mb-2">
-                        <li className="mb-1"><FontAwesomeIcon icon={faHouseChimneyWindow} fixedWidth /> Hanging out with my family</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faPersonHiking} fixedWidth /> Spending time in nature</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faHeadphones} fixedWidth /> Listening to podcasts, audio books, or music</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faJedi} fixedWidth /> Watching or reading Star Wars</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faGamepad} fixedWidth /> Playing video games like The Long Dark, Fallout, or No Man's Sky</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faHammer} fixedWidth /> Working on a DIY project around my house</li>
-                        <li className="mb-2"><FontAwesomeIcon icon={faBook} fixedWidth /> Deep-diving into whatever subject has currently grabbed my interest</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faHouseChimneyWindow} bounce fixedWidth /> Hanging out with my family</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faPersonHiking} bounce fixedWidth /> Spending time in nature</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faHeadphones} bounce fixedWidth /> Listening to podcasts, audio books, or music</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faJedi} bounce fixedWidth /> Watching or reading Star Wars</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faGamepad} bounce fixedWidth /> Playing video games like The Long Dark, Fallout, or No Man's Sky</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faHammer} bounce fixedWidth /> Working on a DIY project around my house</li>
+                        <li className="mb-2"><FontAwesomeIcon icon={faBook} bounce fixedWidth /> Deep-diving into whatever subject has currently grabbed my interest</li>
                     </ul>
                     <div className="my-3">
                         <iframe

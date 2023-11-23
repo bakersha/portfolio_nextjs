@@ -8,7 +8,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center p-24 justify-evenly">
       <h1 className="z-10">Hello there.</h1>
       <p className="text-lg text-gray-300 max-w-2xl z-10">
-        I'm Sharaya.<br />I'm a full stack dev with 4 years experience building internal apps for banks. My journey in tech started with User Acceptance testing back in 2012 before I became a QA tester in 2016 and finally a developer in 2019.
+        I'm Sharaya.<br />I'm a full stack dev with 4 years experience building internal apps for banks. My tech journey started with User Acceptance testing back in 2012 before I became a QA tester in 2016 and finally a developer in 2019.
       </p>
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         <div className="grid grid-cols-1 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">

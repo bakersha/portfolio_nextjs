@@ -67,13 +67,11 @@ export default function NightSkyParticles() {
                                 images:
                                     [
                                         {
-                                            gif: false,
                                             height: 100,
                                             src: "/xwing.png",
                                             width: 200
                                         },
                                         {
-                                            gif: false,
                                             height: 100,
                                             src: "/tieinterceptor.png",
                                             width: 200
@@ -105,7 +103,7 @@ export default function NightSkyParticles() {
                     modes: {
                         bubble: {
                             distance: 40,
-                            duration: 2,
+                            duration: 20,
                             opacity: 8,
                             size: 3,
                             speed: 3
