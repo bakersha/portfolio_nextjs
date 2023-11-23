@@ -5,51 +5,63 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJedi, faHouseChimneyWindow, faPersonHiking, faHeadphones, faGamepad, faHammer, faBook } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
+const skills = [
+    { name: "C#", type: "Languages" },
+    { name: "TypeScript", type: "Languages" },
+    { name: "JavaScript", type: "Languages" },
+    { name: "Perl", type: "Languages" },
+    { name: "C", type: "Languages" },
+    { name: "PHP", type: "Languages" },
+    { name: "JSON", type: "Languages" },
+    { name: "SQL", type: "Languages" },
+    { name: "HTML", type: "Languages" },
+    { name: "CSS / SCSS", type: "Languages" },
+    { name: ".NET Framework", type: "Frameworks" },
+    { name: ".NET Core", type: "Frameworks" },
+    { name: "ASP.NET", type: "Frameworks" },
+    { name: "Angular", type: "Frameworks" },
+    { name: "jQuery", type: "Frameworks" },
+    { name: "Bootstrap", type: "Frameworks" },
+    { name: "Angular Material", type: "Frameworks" },
+    { name: "NextJS", type: "Frameworks" },
+    { name: "React", type: "Frameworks" },
+    { name: "Visual Studio", type: "Tools" },
+    { name: "VS Code", type: "Tools" },
+    { name: "Azure DevOps", type: "Tools" },
+    { name: "SSMS", type: "Tools" },
+    { name: "Git / GitHub", type: "Tools" },
+    { name: "AWS", type: "Tools" }
+]
+
 export default function About() {
     return (
         <main className="flex min-h-screen flex-col items-left justify-between p-24">
             <BackButton></BackButton>
             <h1 className="pb-10 place-self-center">So what am I all about?</h1>
             <ColumnarLayout>
-                <div>
-                    <h3 className="mb-1">Known Technologies</h3>
-                    <div className="mb-2">
-                        <div className="mb-2">
-                            <h6>Languages</h6>
-                            <Pill name={"C#"}></Pill>
-                            <Pill name={"TypeScript"}></Pill>
-                            <Pill name={"JavaScript"}></Pill>
-                            <Pill name={"Perl"}></Pill>
-                            <Pill name={"C"}></Pill>
-                            <Pill name={"JSON"}></Pill>
-                            <Pill name={"SQL"}></Pill>
-                            <Pill name={"HTML"}></Pill>
-                            <Pill name={"CSS / SCSS"}></Pill>
-                        </div>
-                        <div className="mb-2">
-                            <h6 className="lead pe-1">Frameworks / Libraries</h6>
-                            <Pill name={".NET Framework"}></Pill>
-                            <Pill name={".NET Core"}></Pill>
-                            <Pill name={"ASP.NET"}></Pill>
-                            <Pill name={"Angular"}></Pill>
-                            <Pill name={"jQuery"}></Pill>
-                            <Pill name={"Bootstrap"}></Pill>
-                            <Pill name={"Angular Material"}></Pill>
-                            <Pill name={"Tailwind CSS"}></Pill>
-                            <Pill name={"NextJS"}></Pill>
-                        </div>
-                        <div className="mb-2">
-                            <h6 className="lead pe-1">Tools</h6>
-                            <Pill name={"Visual Studio"}></Pill>
-                            <Pill name={"VS Code"}></Pill>
-                            <Pill name={"Azure DevOps"}></Pill>
-                            <Pill name={"SSMS"}></Pill>
-                            <Pill name={"Git / GitHub"}></Pill>
-                            <Pill name={"AWS"}></Pill>
-                        </div>
-                    </div>
 
-                    <h3 className="mb-1">Other Skills</h3>
+                <div className="pl-16 col-span-1">
+                    <h1 className="text-2xl font-semibold leading-9 text-gray-700">Known Technologies</h1>
+                    <h2 className="text-base leading-7 font-light text-gray-400">Languages</h2>
+                    {skills.map(skill => {
+                        if (skill.type == "Languages") {
+                            return (<Pill name={skill.name} />)
+                        }
+                    })}
+                    <h2 className="text-base leading-7 font-light text-gray-400 mt-2">Frameworks & Libraries</h2>
+                    {skills.map(skill => {
+                        if (skill.type == "Frameworks") {
+                            return (<Pill name={skill.name} />)
+                        }
+                    })}
+                    <h2 className="text-base leading-7 font-light text-gray-400 mt-2">Tools</h2>
+                    {skills.map(skill => {
+                        if (skill.type == "Tools") {
+                            return (<Pill name={skill.name} />)
+                        }
+                    })}
+
+                    <h1 className="text-2xl font-semibold leading-9 text-gray-700 mt-5">Other Skills</h1>
                     <ul className="mb-2">
                         <li>Internal-use banking applications development</li>
                         <li>Eager and quick learner</li>
@@ -58,17 +70,18 @@ export default function About() {
                         <li>Collaboration with product owners</li>
                         <li>Manual quality assurance testing</li>
                     </ul>
-                </div>
+                </div>                
+
                 <div>
-                    <h3 className="mb-2">In my free time, you may find me...</h3>
+                    <h1 className="text-2xl font-semibold leading-9 text-gray-700 mb-2">In my free time, you may find me...</h1>
                     <ul className="mb-2">
-                        <li><FontAwesomeIcon icon={faHouseChimneyWindow} fixedWidth /> Hanging out with my family</li>
-                        <li><FontAwesomeIcon icon={faPersonHiking} fixedWidth /> Spending time in nature</li>
-                        <li><FontAwesomeIcon icon={faHeadphones} fixedWidth /> Listening to podcasts, audio books, or music</li>
-                        <li><FontAwesomeIcon icon={faJedi} fixedWidth /> Watching or reading Star Wars</li>
-                        <li><FontAwesomeIcon icon={faGamepad} fixedWidth /> Playing video games like The Long Dark, Fallout, or No Man's Sky</li>
-                        <li><FontAwesomeIcon icon={faHammer} fixedWidth /> Working on a DIY project around my house</li>
-                        <li><FontAwesomeIcon icon={faBook} fixedWidth /> Deep-diving into whatever subject has currently grabbed my interest</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faHouseChimneyWindow} fixedWidth /> Hanging out with my family</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faPersonHiking} fixedWidth /> Spending time in nature</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faHeadphones} fixedWidth /> Listening to podcasts, audio books, or music</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faJedi} fixedWidth /> Watching or reading Star Wars</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faGamepad} fixedWidth /> Playing video games like The Long Dark, Fallout, or No Man's Sky</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faHammer} fixedWidth /> Working on a DIY project around my house</li>
+                        <li className="mb-2"><FontAwesomeIcon icon={faBook} fixedWidth /> Deep-diving into whatever subject has currently grabbed my interest</li>
                     </ul>
                     <div className="my-3">
                         <iframe
