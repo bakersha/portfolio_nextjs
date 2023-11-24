@@ -20,6 +20,8 @@ export default function NightSkyParticles() {
         await console.log(container);
     }, []);
 
+
+    // TODO: Make this function a const and then create another instance of particles? Then return both or make them separate components?
     return (
         <Particles
             id="tsparticles"
@@ -90,9 +92,9 @@ export default function NightSkyParticles() {
                             value: 0
                         }
                     }
-                },                
+                },
                 interactivity: {
-                    detectsOn: "canvas",
+                    detectsOn: "window",
                     events: {
                         onHover: {
                             enable: true,

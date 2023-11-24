@@ -85,3 +85,9 @@ footer {
 FontAwesomeIcon {
   --prefers-reduced-motion: true;
 }
+.icon-jump:hover {
+  -webkit-animation: fa-bounce 1s;
+  -moz-animation: fa-bounce 1s linear;
+  -o-animation: fa-bounce 1s linear;
+  animation: fa-bounce 1s linear;
+}

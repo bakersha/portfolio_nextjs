@@ -23,6 +23,7 @@ const skills = [
     { name: "jQuery", type: "Frameworks" },
     { name: "Bootstrap", type: "Frameworks" },
     { name: "Angular Material", type: "Frameworks" },
+    { name: "TailwindCSS", type: "Frameworks" },
     { name: "NextJS", type: "Frameworks" },
     { name: "React", type: "Frameworks" },
     { name: "Visual Studio", type: "Tools" },
@@ -41,7 +42,7 @@ export default function About() {
             <ColumnarLayout>
 
                 <div className="pl-16 col-span-1">
-                    <h1 className="text-2xl font-semibold leading-9 text-gray-700">Known Technologies</h1>
+                    <h1 className="text-2xl font-semibold leading-9 text-gray-700">I have had exposure to...</h1>
                     <h2 className="text-base leading-7 font-light text-gray-400">Languages</h2>
                     {skills.map(skill => {
                         if (skill.type == "Languages") {
@@ -75,13 +76,13 @@ export default function About() {
                 <div>
                     <h1 className="text-2xl font-semibold leading-9 text-gray-700 mb-2">In my free time, you may find me...</h1>
                     <ul className="mb-2">
-                        <li className="mb-1"><FontAwesomeIcon icon={faHouseChimneyWindow} bounce fixedWidth /> Hanging out with my family</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faPersonHiking} bounce fixedWidth /> Spending time in nature</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faHeadphones} bounce fixedWidth /> Listening to podcasts, audio books, or music</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faJedi} bounce fixedWidth /> Watching or reading Star Wars</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faGamepad} bounce fixedWidth /> Playing video games like The Long Dark, Fallout, or No Man's Sky</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faHammer} bounce fixedWidth /> Working on a DIY project around my house</li>
-                        <li className="mb-2"><FontAwesomeIcon icon={faBook} bounce fixedWidth /> Deep-diving into whatever subject has currently grabbed my interest</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faHouseChimneyWindow} className="icon-jump" fixedWidth /> Hanging out with my family</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faPersonHiking} className="icon-jump" fixedWidth /> Spending time in nature</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faHeadphones} className="icon-jump" fixedWidth /> Listening to podcasts, audio books, or music</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faJedi} className="icon-jump" fixedWidth /> Watching or reading Star Wars</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faGamepad} className="icon-jump" fixedWidth /> Playing video games like The Long Dark, Fallout, or No Man's Sky</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faHammer} className="icon-jump" fixedWidth /> Working on a DIY project around my house</li>
+                        <li className="mb-2"><FontAwesomeIcon icon={faBook} className="icon-jump" fixedWidth /> Deep-diving into whatever subject has currently grabbed my interest</li>
                     </ul>
                     <div className="my-3">
                         <iframe
