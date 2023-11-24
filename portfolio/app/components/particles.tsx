@@ -162,8 +162,7 @@ export default function NightSkyParticles() {
                     draw: {
                         enable: true,
                         lineColor: "rgba(255,255,255,0.2)",
-                        lineWidth: 0.5,
-
+                        lineWidth: 0.5
                     },
                     move: {
                         radius: 15
@@ -171,7 +170,7 @@ export default function NightSkyParticles() {
                     inlineArrangement: "equidistant",
                     scale: 1,
                     type: "inline",
-                    url: "/SharayaBakerMountainRange2.svg"
+                    url: "/SharayaBakerMountainRange1.svg"
                 }
             }}
         />
