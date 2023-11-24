@@ -7,7 +7,7 @@ import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 
 export default function NightSkyParticles() {
     const particlesInit = useCallback(async (engine: Engine) => {
-        console.log(engine);
+        //console.log(engine);
 
         // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
         // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -17,7 +17,7 @@ export default function NightSkyParticles() {
     }, []);
 
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await console.log(container);
+        //await console.log(container);
     }, []);
 
     return (
@@ -67,13 +67,11 @@ export default function NightSkyParticles() {
                                 images:
                                     [
                                         {
-                                            gif: false,
                                             height: 100,
                                             src: "/xwing.png",
                                             width: 200
                                         },
                                         {
-                                            gif: false,
                                             height: 100,
                                             src: "/tieinterceptor.png",
                                             width: 200
@@ -92,12 +90,12 @@ export default function NightSkyParticles() {
                             value: 0
                         }
                     }
-                },                
+                },
                 interactivity: {
                     detectsOn: "canvas",
                     events: {
                         onHover: {
-                            enable: true,
+                            enable: false, // TODO: Determine why hovering on emitted images causes them to shrink. Looks like it's doing the opposite of the dots.
                             mode: "bubble"
                         },
                         resize: true
@@ -105,7 +103,7 @@ export default function NightSkyParticles() {
                     modes: {
                         bubble: {
                             distance: 40,
-                            duration: 2,
+                            duration: 20,
                             opacity: 8,
                             size: 3,
                             speed: 3
@@ -164,8 +162,7 @@ export default function NightSkyParticles() {
                     draw: {
                         enable: true,
                         lineColor: "rgba(255,255,255,0.2)",
-                        lineWidth: 0.5,
-
+                        lineWidth: 0.5
                     },
                     move: {
                         radius: 15
@@ -173,7 +170,7 @@ export default function NightSkyParticles() {
                     inlineArrangement: "equidistant",
                     scale: 1,
                     type: "inline",
-                    url: "/SharayaBakerMountainRange2.svg"
+                    url: "/SharayaBakerMountainRange1.svg"
                 }
             }}
         />

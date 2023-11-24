@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 export default function BackButton() {
     return (
         <div className="mb-5">
-            <a href="/"><FontAwesomeIcon icon={faArrowLeft} size='lg' /></a>
+            <a href="/"><FontAwesomeIcon icon={faArrowLeft} size='lg' className="icon-jump" /></a>
         </div>
     )
 }
