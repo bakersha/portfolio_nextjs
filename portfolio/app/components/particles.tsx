@@ -68,12 +68,12 @@ export default function NightSkyParticles() {
                                     [
                                         {
                                             height: 100,
-                                            src: "/xwing.png",
+                                            src: "https://s3.us-west-2.amazonaws.com/sharayabaker.com/xwing.png",
                                             width: 200
                                         },
                                         {
                                             height: 100,
-                                            src: "/tieinterceptor.png",
+                                            src: "https://s3.us-west-2.amazonaws.com/sharayabaker.com/tieinterceptor.png",
                                             width: 200
                                         },
                                     ]
@@ -158,20 +158,20 @@ export default function NightSkyParticles() {
                         value: 1
                     }
                 },
-                polygon: {
-                    draw: {
-                        enable: true,
-                        lineColor: "rgba(255,255,255,0.2)",
-                        lineWidth: 0.5
-                    },
-                    move: {
-                        radius: 15
-                    },
-                    inlineArrangement: "equidistant",
-                    scale: 1,
-                    type: "inline",
-                    url: "/SharayaBakerMountainRange1.svg"
-                }
+                // polygon: {
+                //     draw: {
+                //         enable: true,
+                //         lineColor: "rgba(255,255,255,0.2)",
+                //         lineWidth: 0.5
+                //     },
+                //     move: {
+                //         radius: 15
+                //     },
+                //     inlineArrangement: "equidistant",
+                //     scale: 1,
+                //     type: "inline",
+                //     url: "https://s3.us-west-2.amazonaws.com/sharayabaker.com/SharayaBakerMountainRange2.svg"
+                // }
             }}
         />
     );
