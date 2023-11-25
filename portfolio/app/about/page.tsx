@@ -46,19 +46,19 @@ export default function About() {
                     <h2 className="text-base leading-7 font-light text-gray-400">Languages</h2>
                     {skills.map(skill => {
                         if (skill.type == "Languages") {
-                            return (<Pill name={skill.name} />)
+                            return (<Pill key={skill.name} name={skill.name} />)
                         }
                     })}
                     <h2 className="text-base leading-7 font-light text-gray-400 mt-2">Frameworks & Libraries</h2>
                     {skills.map(skill => {
                         if (skill.type == "Frameworks") {
-                            return (<Pill name={skill.name} />)
+                            return (<Pill key={skill.name} name={skill.name} />)
                         }
                     })}
                     <h2 className="text-base leading-7 font-light text-gray-400 mt-2">Tools</h2>
                     {skills.map(skill => {
                         if (skill.type == "Tools") {
-                            return (<Pill name={skill.name} />)
+                            return (<Pill key={skill.name} name={skill.name} />)
                         }
                     })}
 
@@ -76,15 +76,15 @@ export default function About() {
                 <div>
                     <h1 className="text-2xl font-semibold leading-9 text-gray-700 mb-2">In my free time, you may find me...</h1>
                     <ul className="mb-2">
-                        <li className="mb-1"><FontAwesomeIcon icon={faHouseChimneyWindow} className="icon-jump" fixedWidth /> Hanging out with my family</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faPersonHiking} className="icon-jump" fixedWidth /> Spending time in nature</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faHeadphones} className="icon-jump" fixedWidth /> Listening to podcasts, audio books, or music</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faJedi} className="icon-jump" fixedWidth /> Watching or reading Star Wars</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faGamepad} className="icon-jump" fixedWidth /> Playing video games like The Long Dark, Fallout, or No Man's Sky</li>
-                        <li className="mb-1"><FontAwesomeIcon icon={faHammer} className="icon-jump" fixedWidth /> Working on a DIY project around my house</li>
+                        <li className="mb-2"><FontAwesomeIcon icon={faHouseChimneyWindow} className="icon-jump" fixedWidth /> Hanging out with my family</li>
+                        <li className="mb-2"><FontAwesomeIcon icon={faPersonHiking} className="icon-jump" fixedWidth /> Spending time in nature</li>
+                        <li className="mb-2"><FontAwesomeIcon icon={faHeadphones} className="icon-jump" fixedWidth /> Listening to podcasts, audio books, or music</li>
+                        <li className="mb-2"><FontAwesomeIcon icon={faJedi} className="icon-jump" fixedWidth /> Watching or reading Star Wars</li>
+                        <li className="mb-2"><FontAwesomeIcon icon={faGamepad} className="icon-jump" fixedWidth /> Playing video games like The Long Dark, Fallout, or No Man&apos;s Sky</li>
+                        <li className="mb-2"><FontAwesomeIcon icon={faHammer} className="icon-jump" fixedWidth /> Working on a DIY project around my house</li>
                         <li className="mb-2"><FontAwesomeIcon icon={faBook} className="icon-jump" fixedWidth /> Deep-diving into whatever subject has currently grabbed my interest</li>
                     </ul>
-                    <div className="my-3">
+                    <div className="my-4">
                         <iframe
                             src="https://open.spotify.com/embed/playlist/5XS3Tso9K8g0ot41oGXwo8?utm_source=generator&theme=0"
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
