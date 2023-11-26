@@ -63,7 +63,7 @@ const jobs = [
 
 export default function Experience() {
     return (
-        <main className="flex min-h-screen flex-col items-left md:p-24">
+        <main className="flex min-h-screen flex-col p-10 md:p-24">
             <BackButton></BackButton>
             <ColumnarLayout>
                 <div className="col-span-1">
