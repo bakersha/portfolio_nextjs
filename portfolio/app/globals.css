@@ -32,7 +32,6 @@ h1 {
   @apply font-bold;
   @apply tracking-tight;
   @apply text-gray-900;
-  @apply sm:text-6xl;
 }
 
 h2 {
@@ -90,4 +89,8 @@ FontAwesomeIcon {
   -moz-animation: fa-bounce 1s linear;
   -o-animation: fa-bounce 1s linear;
   animation: fa-bounce 1s linear;
+}
+.fa-ul {
+  float: left !important;
+  margin-left: 32px !important;
 }
