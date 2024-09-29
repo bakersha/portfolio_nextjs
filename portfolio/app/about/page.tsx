@@ -68,7 +68,7 @@ export default function About() {
                         <li>Agile Scrum / Kanban</li>
                         <li>Requirements gathering and refinement</li>
                         <li>Collaboration with product owners</li>
-                        <li>Manual quality assurance testing</li>
+                        <li>Manual and automated quality assurance testing</li>
                     </ul>
                 </div>                
 
@@ -80,8 +80,8 @@ export default function About() {
                         <li className="mb-2"><FontAwesomeIcon icon={faHeadphones} className="icon-jump" fixedWidth listItem /> Listening to podcasts, audio books, or music</li>
                         <li className="mb-2"><FontAwesomeIcon icon={faJedi} className="icon-jump" fixedWidth listItem /> Watching or reading Star Wars</li>
                         <li className="mb-2"><FontAwesomeIcon icon={faGamepad} className="icon-jump" fixedWidth listItem /> Playing video games like The Long Dark, Fallout, or No Man&apos;s Sky</li>
-                        <li className="mb-2"><FontAwesomeIcon icon={faHammer} className="icon-jump" fixedWidth listItem /> Working on a DIY project around my house</li>
-                        <li className="mb-2"><FontAwesomeIcon icon={faBook} className="icon-jump" fixedWidth listItem /> Deep-diving into whatever subject has currently grabbed my interest</li>
+                        <li className="mb-2"><FontAwesomeIcon icon={faHammer} className="icon-jump" fixedWidth listItem /> Working on DIY projects around my house</li>
+                        <li className="mb-2"><FontAwesomeIcon icon={faBook} className="icon-jump" fixedWidth listItem /> Deep-diving into whatever subject has grabbed my interest</li>
                     </ul>
                     <div className="my-4">
                         <iframe
